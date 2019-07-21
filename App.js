@@ -22,7 +22,7 @@ export default class App extends Component {
 
   render() {
     const {loaded} = this.setState;
-    if(loaded){
+    if(!loaded){
       return (
         <TabNavigaiton />
       );

@@ -48,7 +48,7 @@ const TabNavigation = createBottomTabNavigator(
         tabBarOptions: {
             showLabel: false,
             style: {
-                backgroundColor: "black"
+                backgroundColor: BG_COLOR
             }
         }
     }

@@ -2,7 +2,8 @@ import React, {Component} from 'react';
 import {AppLoading} from 'expo';
 import * as Font from 'expo-font';
 import {Ionicons} from '@expo/vector-icons';
-import { StyleSheet, Text, View } from 'react-native';
+import TabNavigaiton from "./navigation/TabNavigation";
+
 
 export default class App extends Component {
   state = {
@@ -23,9 +24,7 @@ export default class App extends Component {
     const {loaded} = this.setState;
     if(loaded){
       return (
-        <View style={styles.container}>
-          <Text>Open up App.js to start working on your app!</Text>
-        </View>
+        <TabNavigaiton />
       );
     } else {
       return(
@@ -39,11 +38,4 @@ export default class App extends Component {
   }  
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+

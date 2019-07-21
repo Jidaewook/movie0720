@@ -10,3 +10,6 @@ TVPresenter.propTypes = {
 };
 
 export default TVPresenter;
+
+
+//Movie와 같은 구조

@@ -10,3 +10,5 @@ export default class extends Component {
         return <TVPresenter loading={loading} />;
     }
 }
+
+//Movie와 같은 구조.

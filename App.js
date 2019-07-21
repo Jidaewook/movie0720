@@ -1,8 +1,9 @@
 import React, {Component} from 'react';
 import {AppLoading} from 'expo';
 import * as Font from 'expo-font';
+import { StatusBar } from "react-native";
 import {Ionicons} from '@expo/vector-icons';
-import TabNavigaiton from "./navigation/TabNavigation";
+import MainNavigaiton from "./navigation/MainNavigation";
 
 
 export default class App extends Component {
@@ -24,7 +25,10 @@ export default class App extends Component {
     const {loaded} = this.setState;
     if(!loaded){
       return (
-        <TabNavigaiton />
+        <>
+          <StatusBar barStyle="light-content" />
+          <MainNavigaiton />
+        </>
       );
     } else {
       return(
